@@ -40,11 +40,11 @@ namespace TicTacToe
         }
         public void PrintBoard()
         {
-            Console.WriteLine(" {0}|{1}|{2}", plays[0], plays[1], plays[2]);
-            Console.WriteLine(" -----");
-            Console.WriteLine(" {0}|{1}|{2}", plays[3], plays[4], plays[5]);
-            Console.WriteLine(" -----");
-            Console.WriteLine(" {0}|{1}|{2}", plays[6], plays[7], plays[8]);
+            Console.WriteLine(" {0} | {1} | {2}", plays[0], plays[1], plays[2]);
+            Console.WriteLine("---|---|---");
+            Console.WriteLine(" {0} | {1} | {2}", plays[3], plays[4], plays[5]);
+            Console.WriteLine("---|---|---");
+            Console.WriteLine(" {0} | {1} | {2}", plays[6], plays[7], plays[8]);
         }
 
         public void Play()
@@ -165,6 +165,7 @@ namespace TicTacToe
                 if(plays[i] != plays[i+2])
                     win = false;
             }
+            if(win) return win;
             win = CheckDraw();
             return win;
         }
