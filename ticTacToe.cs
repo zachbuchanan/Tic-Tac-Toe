@@ -1,4 +1,7 @@
 using System;
+//TO DO
+// Unique file per class
+// Break down CheckWin into individual methods
 
 namespace TicTacToe
 {
